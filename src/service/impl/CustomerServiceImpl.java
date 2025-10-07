@@ -7,7 +7,7 @@ import service.CustomerService;
 
 public class CustomerServiceImpl implements CustomerService
 {
-    private CustomerDao customerDao = new CusromerDaoImpl();
+    private final CustomerDao customerDao = new CusromerDaoImpl();
     @Override
     public void createCustomer(Customer customer) {
         customerDao.createCustomer(customer);
